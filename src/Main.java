@@ -69,9 +69,10 @@ public class Main {
 //          Expected Output:
 //          Wednesday
 
-        System.out.println("--get the day name from the day number--");
+        System.out.println("--get the day name from random integer number--");
+
         System.out.println("Enter the number of the day from 1 to 7: ");
-        int dayNumber = scanner.nextInt();
+        int dayNumber = (int) (Math.random()* 7 + 1);
         switch (dayNumber){
             case 1:
                 System.out.println("Sunday");
